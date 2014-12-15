@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  link(rel='stylesheet', href='stylesheets/vendor/reset/normalize.css')
+  link(rel='stylesheet', href='stylesheets/style.css')
+  //- script(src="js/app.js")
+  title Document
+body
+  p#aaa
+    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione pariatur nihil, voluptatum magni voluptatem voluptate atque nobis tenetur omnis eos quisquam quis nulla animi quia sunt neque, accusamus rem officia.
+  button fuck
+  //- button(id="erase") erase
+  script(src="https://code.jquery.com/jquery-2.1.1.min.js")
+  script(src="js/app/dramanita.js")
+  script.
+    (function(){
+      $('button').on('click', function(){
+        $('#aaa').animate({
+          'fontSize': '+=5',
+          }, 1000, 'swing', aaa)
+        .animate({
+          'margin-top': '+=200',
+          },{
+          duration: 1000,
+          queue: false
+          });
+    
+        });
+      
+      })();
+    function aaa(){
+      console.log("fuck!!!!!!!!!");
+    }
+
